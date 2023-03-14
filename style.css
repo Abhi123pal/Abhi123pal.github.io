@@ -23,7 +23,6 @@ nav {
   display: flex;
   column-gap: 10vw;
   padding: 25px 0;
-  border: 2px solid blue;
 }
 
 .logo {
@@ -32,7 +31,6 @@ nav {
   display: flex;
   position: relative;
   cursor: pointer;
-  border: 2px solid red;
   flex: 1.5;
 }
 
@@ -40,7 +38,6 @@ nav {
   padding: 0;
   margin: 0;
   font-size: 7vw;
-
   color: transparent;
   -webkit-text-stroke: 1px #fff;
   background: url("img/back.png");
@@ -64,7 +61,7 @@ a {
   color: aliceblue;
   cursor: pointer;
 }
-.linkContainer i{
+.linkContainer>i{
   color: #fff;
 }
 .linkContainer i.bx-menu {
@@ -119,7 +116,6 @@ nav ul li a:hover:after {
 .text-box {
   display: flex;
   flex-direction: column;
-  border: 3px solid green;
   color: #fff;
 }
 
@@ -205,6 +201,9 @@ nav ul li a:hover:after {
     row-gap: 2vw;
     margin-bottom: 6vw;
   }
+  .linkContainer>i{
+    font-size:5vw;
+  }
 }
 
 @media(max-width:660px){
@@ -219,14 +218,13 @@ nav ul li a:hover:after {
     margin-bottom: 5vw;
   }
   nav ul{
-    border: 2px solid rgb(247, 0, 255);
     row-gap: 15px;
     position: absolute;
     display: none;
     flex-direction: column;
     margin: 10px;
-    top: -25px;
-    right: 10px;
+    top: -28px;
+    right: 22px;
 
   }
   .active{
@@ -241,7 +239,34 @@ nav ul li a:hover:after {
   }
   .text-box .row {
     display: flex;
-    /* flex-direction: column; */
     margin-top: 5vw;
+  }
+}
+@media(max-width:400px){
+  .logo span {
+    font-size: 6vw;
+    left: 11vw;
+    bottom: -8vw;
+  }
+  .logo h1{
+    font-size: 15vw;
+  }
+  .text-box p {
+    font-size: 10vw;
+  }
+  .text-box h1 {
+    font-size: 18vw;
+    line-height: 14vw;
+  }
+  .text-box h3 {
+    font-size: 5vw;
+  }
+  .social-icons {
+    right: 2vw;
+    bottom: -8vw;
+  }
+  
+  .social-icons i {
+    font-size: 5vw;
   }
 }
