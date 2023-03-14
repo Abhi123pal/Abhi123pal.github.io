@@ -4,104 +4,90 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../dark.css" />
-    <link rel="stylesheet" href="../about/style.css" />
+    <link rel="stylesheet" href="../nav.css" />
+    <link rel="stylesheet" href="style.css" />
     <link
       href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <style>
-      .nav img {
-        width: 4rem;
-      }
-
-      .nav {
-        width: 72vw;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        margin-bottom: 1.3rem;
-      }
-
-      .nav .menu {
-        width: 30%;
-        display: flex;
-        justify-content: space-around;
-      }
-      
-    </style>
     <title>myPortfolio &copy;Abhinav Pal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="icon" type="image/x-icon" href="../img/favicon_io/favicon.ico" />
   </head>
 
   <body>
-    <nav>
-      <div class="nav">
-        <a href="../index.html"
-          ><img src="../img/images-removebg-preview.png" alt=""
-        /></a>
-        <div class="menu">
-          <ul>
+    <div class="container">
+      <nav>
+        <div class="logo">
+          <a href="../index.html">
+            <h1>A</h1>
+            <span>BHINAV</span>
+          </a>
+        </div>
+        <div class="linkContainer">
+          <ul class="">
             <li><a href="../index.html">Home</a></li>
             <li><a href="../portfolio/index_p.html">Projects</a></li>
-            <label class="switch" id="switch">
-              <input type="checkbox" />
-              <span class="slider round"></span>
-            </label>
+            <li>
+              <a href="../img/Abhinav_Resume.pdf" target="_blank">Resume</a>
+            </li>
           </ul>
+          <i class="bx bx-menu"></i>
         </div>
-      </div>
-      <div class="container">
-        <div class="left">
-          <div class="box">
-            <div class="social-icons">
-              <a
-                target="_blank"
-                href="https://www.youtube.com/c/Letscodewitharshk"
-                ><i class="bx bxl-youtube"></i
-              ></a>
-              <a target="_blank" href="https://www.instagram.com/letscode20/"
-                ><i class="bx bxl-instagram"></i
-              ></a>
-              <a target="_blank" href="https://www.linkedin.com/in/abhinav-pal-5542b51ba/"
-                ><i class="bx bxl-linkedin"></i
-              ></a>
-              <a target="_blank" href="https://github.com/Abhi123pal"
-                ><i class="bx bxl-github"></i
-              ></a>
-            </div>
+      </nav>
+      <div class="section2">
+        <div class="mainContainer">
+          <img src="../img/myDp.jpg" class="dpimg" />
+          <div className="sidebarLinks">
+            <a
+              href="https://www.youtube.com/c/Letscodewitharshk"
+              target="_blank"
+            >
+              <i class="bx bxl-youtube"></i>
+            </a>
+            <a href="https://www.instagram.com/letscode20/" target="_blank">
+              <i class="bx bxl-instagram"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/abhinav-pal-5542b51ba/"
+              target="_blank"
+            >
+              <i class="bx bxl-linkedin"></i>
+            </a>
+            <a href="https://github.com/Abhi123pal" target="_blank">
+              <i class="bx bxl-github"></i>
+            </a>
           </div>
-
-          <img
-            src="../img/myDp.jpg"
-            alt="photo_6219564969545019734_x.jpg"
-          />
         </div>
         <div class="right">
           <h1>ABOUT ME</h1>
-          <p>
+          <div class="ulBox">
             <ul>
-              <li> I am Abhinav Pal. I'm an Btech student at
-                <a
-                  href="https://oistbpl.com/oct-bhopal/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >OCT Bhopal</a 
-                > Computer Science Department. My current is 8.6 CGPA</li>
-                <li>I'm student of 2023 batch.</li>
-                <li>I'm passionate coder and a web developer.</li>
-               <b> Skills:</b>
-               <li>HTML</li>
-              <li>CSS</li>
-              <li>Javascript</li>
+              <li>
+                I am Abhinav Pal. I'm an Btech student at
+                <a href="http://" target="_blank">OCT Bhopal</a> Computer
+                Science Department. My current is 8.6 CGPA
+              </li>
+              <li>I'm student of 2023 batch.</li>
+              <li>I'm passionate coder and a web developer.</li>
+            </ul>
+            <h3>SKILLS</h3>
+            <ul id="Skills">
+              <li>HTML , CSS , JAVASCRIPT , TYPESCRIPT</li>
+              <li>React js , ReactNative</li>
+              <li>Sql</li>
               <li>C/C++</li>
             </ul>
-            
-          </p>
+          </div>
         </div>
       </div>
-    </nav>
-    <script src="../dark.js"></script>
+    </div>
+    <script src="../index.js"></script>
   </body>
 </html>
