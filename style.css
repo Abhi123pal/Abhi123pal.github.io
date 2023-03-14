@@ -6,76 +6,87 @@
 }
 
 .container {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), transparent),
     url("https://p0.pikist.com/photos/954/566/girl-lights-neon-sign-nightlife-person-smiling-woman-illuminated-night-young-adult.jpg");
   background-size: cover;
   background-position: center;
-  padding: 0 8%;
+  padding: 2% 6%;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 nav {
   display: flex;
-  width: 100%;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 5px 0;
+  column-gap: 10vw;
+  padding: 25px 0;
+  border: 2px solid blue;
 }
 
 .logo {
+  padding: 0;
+  height: 7vw;
   display: flex;
+  position: relative;
+  cursor: pointer;
+  border: 2px solid red;
+  flex: 1.5;
 }
 
 .logo h1 {
-  font-size: 10rem;
-  line-height: 10rem;
-  margin-left: -10px;
+  padding: 0;
+  margin: 0;
+  font-size: 7vw;
+
   color: transparent;
   -webkit-text-stroke: 1px #fff;
   background: url("img/back.png");
   -webkit-background-clip: text;
+  background-clip: text;
   background-position: 0 0;
   animation: back 20s linear infinite;
 }
 
 .logo span {
-  cursor: pointer;
-  font-size: 8rem;
+  font-size: 3vw;
   font-weight: bolder;
   color: #fff;
-  line-height: 15rem;
-  margin-left: -10px;
-}
-
-.logo span {
-  margin: 0;
-  margin-top: 1.5rem;
-  font-size: 3rem;
-}
-
-i {
-  color: #fff;
-  font-size: 2.5rem;
-  cursor: pointer;
+  position: absolute;
+  left: 5vw;
+  bottom: -0.4vw;
 }
 
 a {
   text-decoration: none;
   color: aliceblue;
+  cursor: pointer;
 }
-
+.linkContainer i{
+  color: #fff;
+}
+.linkContainer i.bx-menu {
+  display: none;
+}
+.linkContainer{
+  display: flex;
+  flex: 1.5;
+  align-items: center;
+  justify-content: flex-end;
+}
 nav ul {
-  flex: 1;
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
   text-align: right;
-  padding: 1.7rem;
+  padding-top: 5vw;
 }
 
 li {
   list-style: none;
   display: inline-block;
-  margin: 1.02rem 1.7rem;
 }
 
 nav ul li a {
@@ -106,70 +117,131 @@ nav ul li a:hover:after {
 }
 
 .text-box {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid green;
   color: #fff;
-  position: absolute;
-  bottom: 8%;
 }
 
 .text-box p {
-  font-size: 3.12rem;
+  font-size: 5vw;
   font-weight: 600;
+}
+.textLogo{
+  margin-bottom: 2vw;
 }
 
 .text-box h1 {
-  font-size: 12rem;
-  line-height: 10rem;
-  margin-left: -10px;
+  font-size: 12vw;
+  line-height: 10vw;
   color: transparent;
   -webkit-text-stroke: 1px #fff;
   background: url("img/back.png");
   -webkit-background-clip: text;
+  background-clip: text;
   background-position: 0 0;
+  object-fit: cover;
   animation: back 20s linear infinite;
 }
 
 @keyframes back {
   100% {
-    background-position: 2000px 0;
+    background-position: 1700px 10px;
   }
 }
 
 .text-box h3 {
-  font-size: 2.5rem;
+  font-size: 3vw;
   font-weight: 500;
 }
 
 .text-box .row {
+  width: 80vw;
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
-  margin-top: 1.875rem;
+  row-gap: 10px;
+  column-gap: 10px;
+  margin-top: 5vw;
 }
+
 
 .text-box a {
   padding: 10px 20px;
-  margin-right: 20px;
   border: 2px solid #fff;
   border-radius: 50px;
-  display: flex;
-  align-items: center;
-}
-
-.text-box a span {
-  font-size: 1.875rem;
-  line-height: 0.9375rem;
-  margin-left: 5px;
-  margin-bottom: 3px;
 }
 
 .social-icons {
+  height: 30vh;
   position: absolute;
-  right: 5%;
-  bottom: 8%;
+  right: 1vw;
+  bottom: 7vw;
 }
 
 .social-icons i {
-  width: 30px;
+  font-size: 3vw;
   display: block;
   margin: 5px;
+}
+ 
+@media(max-width:500px){
+  .text-box a{
+    font-size: 3vw;
+  }
+}
+
+@media(max-width:767px){
+  .text-box p {
+    font-size: 7vw;
+  }
+  .text-box h1 {
+    font-size: 15vw;
+    line-height: 12vw;
+  }
+  .text-box h3 {
+    font-size: 3.5vw;
+  }
+  .text-box{
+    row-gap: 2vw;
+    margin-bottom: 6vw;
+  }
+}
+
+@media(max-width:660px){
+  .linkContainer{
+    position: relative;
+  }
+  .linkContainer i.bx-menu {
+    display: inline-block;
+    color: #fff;
+  }
+  nav{
+    margin-bottom: 5vw;
+  }
+  nav ul{
+    border: 2px solid rgb(247, 0, 255);
+    row-gap: 15px;
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    margin: 10px;
+    top: -25px;
+    right: 10px;
+
+  }
+  .active{
+    display: flex;
+  }
+  .bx-x , nav li{
+    display: inline-block;
+  }
+  .logo span {
+    left: 5.5vw;
+    bottom: -1vw;
+  }
+  .text-box .row {
+    display: flex;
+    /* flex-direction: column; */
+    margin-top: 5vw;
+  }
 }
