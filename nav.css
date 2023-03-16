@@ -6,7 +6,7 @@
   }
 .container {
     width: 100vw;
-    height: 99.5vh;
+    height: 100dvh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), transparent),
       url("https://p0.pikist.com/photos/954/566/girl-lights-neon-sign-nightlife-person-smiling-woman-illuminated-night-young-adult.jpg");
     background-size: cover;
